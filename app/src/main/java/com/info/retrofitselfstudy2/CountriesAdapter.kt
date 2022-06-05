@@ -30,6 +30,8 @@ class CountriesAdapter(private val context:Context,private var list: MutableList
         holder.currencies.text = currency
 
         val flags = country.flags
+
+
         Glide.with(holder.action.context).load(flags.png).into(holder.action)
     }
 
